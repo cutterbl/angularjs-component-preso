@@ -23,7 +23,8 @@ var _ = require('lodash'),
             //'bower_components/angular-translate/angular-translate.min.js ',
             //'bower_components/angular-translate-loader-partial/angular-translate-loader-partial.min.js',
             'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
-            //'libs/jasmine-mox-matchers.min.js'
+            'node_modules/bardjs/dist/bard.js',
+            'node_modules/jasmine-mox-matchers/dist/jasmine-mox-matchers.min.js',
 
             // Sources/Tests
             'src/**/*.js',

@@ -11,7 +11,7 @@ Components and Directives, and some guidelines to use when determining which is 
 ## Following Along
 
 To see each step of the process, check out each of the tags beginning with **0.1**, in succession. This file will
-contain details of what is happening each step of the way.
+contain details of what is happening each step of the way. Final step includes all unit tests.
 
 ### Pre-Requisites
 - [Node & NPM](https://nodejs.org)

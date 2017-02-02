@@ -16,6 +16,14 @@ export default /*@ngInject*/ class MessagesController {
         this.loadMessage();
     }
 
+    clearErrors () {
+        this.errors = null;
+    }
+
+    transformErrors (err) {
+        this.errors = (angular.isArray(err)) ? err : [err];
+    }
+
     loadMessage ({message=null} = {}) {
         if (!message) {
             this.currentMessage = angular.copy(this.blankMessage);
@@ -24,10 +32,6 @@ export default /*@ngInject*/ class MessagesController {
         }
         this.note = this.currentMessage.note;
         this.clearErrors();
-    }
-
-    clearErrors () {
-        this.errors = null;
     }
 
     saveMessage (note) {
@@ -58,9 +62,5 @@ export default /*@ngInject*/ class MessagesController {
                 this.loadMessage(copy);
                 this.transformErrors(err);
             });
-    }
-
-    transformErrors (err) {
-        this.errors = (angular.isArray(err)) ? err : [err];
     }
 }

@@ -42,7 +42,7 @@ export default /*@ngInject*/ class MessagesService {
                     console.log('message updated');
                     return found;
                 })
-                .catch(() => {found = copy});
+                .catch(() => {found = copy;});
         } else {
             return this.$q.reject(`Message not found with id ${message.id}`);
         }
