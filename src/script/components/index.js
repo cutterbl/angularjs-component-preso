@@ -2,5 +2,6 @@
 
 
 module.exports = angular.module('app-scripts.components', [
-    require('./errors').name
+    require('./errors').name,
+    require('./messages').name
 ]);

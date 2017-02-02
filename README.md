@@ -8,11 +8,12 @@ very similar to Directives, there are key differences that a developer needs to 
 in a specific situation. This session will cover the basics of Component development, some of the differences between
 Components and Directives, and some guidelines to use when determining which is appropriate for your use case.
 
-## Step 1
+## Step 2
 
-Let's create our first custom component, by taking our error display and turning it into a reusable display block.
-We'll give our component two required 'bindings', **errors**: a two-way binding of the array of errors to display, and
-**clear**: a function binding to clear the errors.
+Now we'll create the message list component, tying back functionality to our parent controller even further.
+We'll give our component three required 'bindings', **messages**: a two-way binding of the array of messages to
+display, **load**: a function binding loading a message back in the editor, and **remove**: a function binding
+for removing a message from the list.
 
 ### Pre-Requisites
 - [Node & NPM](https://nodejs.org)
