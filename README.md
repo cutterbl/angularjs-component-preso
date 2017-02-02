@@ -8,12 +8,11 @@ very similar to Directives, there are key differences that a developer needs to 
 in a specific situation. This session will cover the basics of Component development, some of the differences between
 Components and Directives, and some guidelines to use when determining which is appropriate for your use case.
 
-## Step 2
+## Step 3
 
-Now we'll create the message list component, tying back functionality to our parent controller even further.
-We'll give our component three required 'bindings', **messages**: a two-way binding of the array of messages to
-display, **load**: a function binding loading a message back in the editor, and **remove**: a function binding
-for removing a message from the list.
+~~Did we need a message list component?~~ Not really. The message list isn't a core display state, doesn't require it's
+own controller, and isn't something we'd reuse, so it's not really necessary to make it a component. Let's revert it
+and move on to our next component.
 
 ### Pre-Requisites
 - [Node & NPM](https://nodejs.org)
