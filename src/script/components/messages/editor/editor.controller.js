@@ -19,8 +19,10 @@ export default /*@ngInject*/ class MessageEditorController {
     }
 
     focusAndSelect () {
-        this.el.focus();
-        this.el.select();
+        if (this.el) {
+            this.el.focus();
+            this.el.select();
+        }
     }
 
     $onInit () {

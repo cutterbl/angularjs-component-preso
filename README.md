@@ -8,10 +8,10 @@ very similar to Directives, there are key differences that a developer needs to 
 in a specific situation. This session will cover the basics of Component development, some of the differences between
 Components and Directives, and some guidelines to use when determining which is appropriate for your use case.
 
-## Step 5
+## Step 6
 
-Let's further enhance our message editor component by implementing our **$postLink** function to reference the DOM
-for minor manipulation in future events, as well as applying methods used solely by our component.
+For our final step, let's covert the entire messages display into a component, and apply it directly to the state
+template, along with it's controller and a little bit of cleanup.
 
 ### Pre-Requisites
 - [Node & NPM](https://nodejs.org)

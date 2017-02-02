@@ -11,5 +11,18 @@ angular.module('testApp', [
             $rootScope.$state = $state;
             $rootScope.$stateParams = $stateParams;
         }
-    ]);
-// *** 'Home' state is defined in /script/messages
+    ])
+    .config(
+        /*@ngInject*/
+        function ($stateProvider, $urlRouterProvider) {
+
+            $urlRouterProvider.otherwise('/');
+
+            $stateProvider
+                .state({
+                    name: 'home',
+                    url: '/',
+                    template: '<messages class="panel"></messages>'
+                });
+        }
+    );
