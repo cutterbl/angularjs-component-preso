@@ -8,12 +8,10 @@ very similar to Directives, there are key differences that a developer needs to 
 in a specific situation. This session will cover the basics of Component development, some of the differences between
 Components and Directives, and some guidelines to use when determining which is appropriate for your use case.
 
-## Step 4
+## Step 5
 
-Let's migrate the message editor into it's own component, complete with it's own controller and bindings. Here we'll
-take a quick look at the **$onInit()** method for creating some defaults, and the **$onChanges()** method for listening
-for value changes from the parent controller. We'll also look at one-way data binding and discuss why this is
-considered the new best practice.
+Let's further enhance our message editor component by implementing our **$postLink** function to reference the DOM
+for minor manipulation in future events, as well as applying methods used solely by our component.
 
 ### Pre-Requisites
 - [Node & NPM](https://nodejs.org)
