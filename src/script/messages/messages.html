@@ -1,21 +1,6 @@
 <section id="messages" class="panel">
     <div class="panel-body">
-        <div class="row">
-            <div class="col-md-6">
-                <ng-form name="messagesEditor">
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="note" name="note" ng-model="$ctrl.currentMessage.note" placeholder="New Note..." />
-                        <span class="input-group-btn">
-                            <button type="button"
-                                    class="btn btn-primary"
-                                    ng-click="$ctrl.saveMessage()">
-                                Save
-                            </button>
-                        </span>
-                    </div>
-                </ng-form>
-            </div>
-        </div>
+        <message-editor note="$ctrl.note" on-save="$ctrl.saveMessage(note)"></message-editor>
         <errors clear="$ctrl.clearErrors()" errors="$ctrl.errors" ng-if="$ctrl.errors"></errors>
         <div ng-if="$ctrl.messages.length">
             <div class="row">

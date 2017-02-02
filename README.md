@@ -8,11 +8,12 @@ very similar to Directives, there are key differences that a developer needs to 
 in a specific situation. This session will cover the basics of Component development, some of the differences between
 Components and Directives, and some guidelines to use when determining which is appropriate for your use case.
 
-## Step 3
+## Step 4
 
-~~Did we need a message list component?~~ Not really. The message list isn't a core display state, doesn't require it's
-own controller, and isn't something we'd reuse, so it's not really necessary to make it a component. Let's revert it
-and move on to our next component.
+Let's migrate the message editor into it's own component, complete with it's own controller and bindings. Here we'll
+take a quick look at the **$onInit()** method for creating some defaults, and the **$onChanges()** method for listening
+for value changes from the parent controller. We'll also look at one-way data binding and discuss why this is
+considered the new best practice.
 
 ### Pre-Requisites
 - [Node & NPM](https://nodejs.org)

@@ -1,3 +1,5 @@
 'use strict';
 
-module.exports = angular.module('app-scripts.components.messages', []);
+module.exports = angular.module('app-scripts.components.messages', [
+    require('./editor').name
+]);
