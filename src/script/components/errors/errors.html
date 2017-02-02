@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="alert alert-warning alert-dismissable" role="alert">
+            <button type="button" class="close" aria-alert="Close" ng-click="$ctrl.clear()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <ul class="errors">
+                <li ng-repeat="error in $ctrl.errors">{{error}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

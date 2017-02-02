@@ -16,20 +16,7 @@
                 </ng-form>
             </div>
         </div>
-        <div ng-if="$ctrl.errors">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="alert alert-warning alert-dismissable" role="alert">
-                        <button type="button" class="close" aria-alert="Close" ng-click="$ctrl.clearErrors()">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <ul class="errors">
-                            <li ng-repeat="error in $ctrl.errors">{{error}}</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <errors clear="$ctrl.clearErrors()" errors="$ctrl.errors" ng-if="$ctrl.errors"></errors>
         <div ng-if="$ctrl.messages.length">
             <div class="row">
                 <div class="col-md-6">
