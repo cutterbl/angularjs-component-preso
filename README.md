@@ -1,5 +1,5 @@
 # [Components in Angular 1.5](http://prezi.com/zsjz4kuliv_s/?utm_campaign=share&utm_medium=copy&rc=ex0share)
-A presentation on building and using AngularJS components
+A presentation (linked in the title above) on building and using AngularJS components
 
 Angular 1.5 introduces a new paradigm, in Angular development, by shifting reusable display bits to “Components”.
 Angular Components replace many traditional Directives, while continuing to provide a rich ecosystem for handling
@@ -8,10 +8,10 @@ very similar to Directives, there are key differences that a developer needs to 
 in a specific situation. This session will cover the basics of Component development, some of the differences between
 Components and Directives, and some guidelines to use when determining which is appropriate for your use case.
 
-## Step 6
+## Following Along
 
-For our final step, let's covert the entire messages display into a component, and apply it directly to the state
-template, along with it's controller and a little bit of cleanup.
+To see each step of the process, check out each of the tags beginning with **0.1**, in succession. This file will
+contain details of what is happening each step of the way.
 
 ### Pre-Requisites
 - [Node & NPM](https://nodejs.org)

@@ -18,6 +18,11 @@
     "Node",
     "Express"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cutterbl/angularjs-component-preso.git"
+  },
+  "homepage": "http://cutterbl.github.io/angularjs-component-preso",
   "private": true,
   "ignore": [
     "**/.*",
