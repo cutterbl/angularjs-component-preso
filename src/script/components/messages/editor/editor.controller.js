@@ -17,7 +17,7 @@ export default /*@ngInject*/ class MessageEditorController {
 
     $onChanges (changeObj) {
         const newNote = (changeObj && changeObj.note) ? changeObj.note : null;
-        if (newNote && newNote.currentValue !== newNote.previousValue) {
+        if (newNote && newNote.currentValue !== newNote.previousValue && !newNote.isFirstChange()) {
             console.log('new note: ', newNote.currentValue);
             this.note = newNote.currentValue;
             this.focusAndSelect();
@@ -32,10 +32,8 @@ export default /*@ngInject*/ class MessageEditorController {
     }
 
     focusAndSelect () {
-        if (this.el) {
-            this.el.focus();
-            this.el.select();
-        }
+        this.el.focus();
+        this.el.select();
     }
 
     save () {
